@@ -31,10 +31,11 @@ for alphabet in correct_answer:
 
 while player_lifes > 0:
 
-    print('(Cheat) Answer: ')
-    print(''.join(correct_answer_in_alphabet))
-
-    print('Guess: ' + ''.join(correct_blank_answer))
+    #print('(Cheat) Answer: ')
+    #print(''.join(correct_answer_in_alphabet))
+    print('*Reminder* If you guessed more than 1 letter, only the first letter would be checked.')
+    print('*TURN CAPSLOCK ON! IF NOT YOUR ANSWER CONSIDERED AS WRONG!*')
+    print('Guess: ' + ' '.join(correct_blank_answer) + ' ')
     print('Lifes: ', player_lifes)
     print('What you guessed already: ')
     if len(player_already_guessed) == 0:
@@ -61,5 +62,7 @@ while player_lifes > 0:
 
 if player_lifes == 0:
     print('You Lose! Player have {} life(s) left.'.format(player_lifes))
+    print('The correct answer is ', correct_answer)
 else:
+    print('Player guessed {} correctly!'.format(correct_answer))
     print('You Win! Player have {} life(s) left.'.format(player_lifes))
