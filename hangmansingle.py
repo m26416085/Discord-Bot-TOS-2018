@@ -1,8 +1,6 @@
 #console-based game
 import random
 
-import time
-
 animalanswer = [
     'CHICKEN', 'DUCK', 'WHALE', 'DOG', 'CAT', 'GOOSE', 'MOUSE', 'SHARK'
     'CROCODILE', 'PARROT', 'TIGER', 'LION', 'GIRAFFE', 'SNAKE', 'ELEPHANT',
@@ -15,11 +13,9 @@ correct_blank_answer = []
 correct_answer_in_alphabet = []
 
 #player answer
-player_answer = ''
 player_guess = ''
 player_lifes = 6
 player_already_guessed = []
-
 
 #convert correct answer to blank
 for alphabet in correct_answer:
@@ -57,6 +53,7 @@ while player_lifes > 0:
 
         if correct_blank_answer == correct_answer_in_alphabet:
             break;
+
     else:
         print('You already guessed {}!'.format(player_guess))
 
