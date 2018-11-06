@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 import datetime
 
-token = 'NTA2ODEyNTk2NjE2NDI5NTgx.DsMdSQ.JuhJ7kxvlNqrpOEL7X0qSVTcDUg'
+token = ''
 
 client = commands.Bot(command_prefix='-')
 
