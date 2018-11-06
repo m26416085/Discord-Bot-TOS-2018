@@ -36,19 +36,4 @@ async def help(ctx):
     #await client.say(embed=embed)
     await client.send_message(channel, embed = embed)
 
-# @client.command(pass_context = True)
-# async def help(ctx):
-#    author = ctx.message.author
-#    channel = ctx.message.channel
-#
-#    embed = discord.Embed(
-#        colour = discord.Colour.orange()
-#    )
-#
-#    embed.set_author(name='Help')
-#    embed.add_field(name='.ping', value='Returns Pong!', inline=False)
-#
-#    await client.send_message(author, embed = embed)
-#    await client.send_message(channel, "I've send you a message :)")
-
 client.run(token)
